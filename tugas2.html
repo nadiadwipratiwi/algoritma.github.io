@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+</head>
+<body>
+    <Script>
+        // nomor 1
+        let x = 5;
+        let y = 10;
+        let z = 15;
+
+        if (x>y && x>z) {
+            console.log ("bilangan 1 terbesar");
+        }
+        else if (y>x && y>z) {
+            console.log ("bilangan 2 terbesar");
+        }
+        else if (z>x && z>y) {
+            console.log ("bilangan 3 terbesar");
+        }
+
+
+        // nomor 2
+        let user = -2
+
+        if (user < 0) {
+            console.log ("negatif")
+        }
+        else {
+            console.log ("positif")
+        }
+        if (user % 2 == 0) {
+            console.log ("genap")
+        }
+        else {
+            console.log ("ganjil")
+        }
+
+
+        // nomor 3
+        let angka = 1
+
+        if (angka == 0) {
+            maka = "OFF";
+        } else if (angka == 1) {
+            maka = "ON";
+        }
+
+        console.log (maka)
+
+
+        // nomor 4 
+        let harga1 = 70000;
+        let harga2 = 65000;
+        let harga3 = 80000;
+        let total = harga1 + harga2 + harga3;
+        let diskon = total * 10/100;
+
+
+        if (total > 100000) {
+            harga = total - diskon;
+        } else {
+            harga = total;
+        }
+
+        console.log(harga)
+
+
+        // nomor 5
+        let lembur = 6;
+
+        if (lembur < 6){
+            gaji = 100000;
+        }
+        else if (lembur == 6){
+            gaji = 200000;
+        }
+        else if (lembur > 6){
+            gaji = 300000;
+        }
+
+        console.log(gaji)
+
+
+        // nomor 6
+        let air = 1000.0;
+
+        if (air <= 500.0) {
+            status = "AMAN"
+        }
+        else if (air <= 600.0){
+            status = "WASPADA"
+        }
+        else if (air <= 650.0){
+            status = "SIAGA 2"
+        }
+        else if (air > 650.0){
+            status = "SIAGA 1"
+        }
+
+        console.log(status)
+    </Script>
+</body>
+</html>
