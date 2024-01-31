@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // looping for
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log(i);
+        // }
+
+        // // looping while
+        // let a = 1
+        // while(a <= 10){
+        //     console.log(a);
+        //     a++;
+        // }
+
+        // // looping do while
+        // let b = 1;
+        // do {
+        //     console.log(b);
+        //     b++;
+        // } while (b <= 10);
+
+
+        for(let tahun = Number(prompt("masukkan")); tahun <= 2023; tahun+= 4) {
+            if (tahun % 4 != 0){
+                console.log(`${tahun} adalah bukan tahun kabisat`)
+            } else if (tahun % 100 != 0) {
+                console.log(`${tahun} adalah tahun kabisat`)
+            } else if (tahun % 400 == 0) {
+                console.log(`${tahun} adalah tahun kabisat`)
+            } else {
+                console.log(`${tahun} adalah bukan tahun kabisat`)
+            }
+        }
+    </script>
+</body>
+</html>

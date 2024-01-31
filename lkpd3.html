@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nomor 1
+        let berat = 3000
+        let harga = 5000
+        
+        let hargasebelum = berat / 1000 * harga;
+        let diskon = hargasebelum * 5 / 100;
+        let totalharga = hargasebelum - diskon;
+
+        console.log (`
+        harga sebelum diskon adalah ${hargasebelum}
+        diskon adalah ${diskon}
+        total harga setelah diskon adalah ${totalharga}`)
+
+        // nomor 2
+        let input = prompt("masukkan bilangan anda")
+        let bilangan = parseInt(input);
+
+        let satuan = bilangan % 10;
+        let puluhan = Math.floor((bilangan / 10 ) % 10);
+        let ratusan = Math.floor((bilangan / 100 ) % 10);
+        let ribuan = Math.floor((bilangan / 1000 ) % 10);
+
+        console.log(`
+        Bilangan ribuan adalah ${ribuan}
+        bilangan ratusan adalah ${ratusan}
+        bilangan puluhan adalah ${puluhan}
+        bilangan satuan ${satuan}
+        `)
+
+        // nomor 3
+        let cuaca = 900;
+        let derajat = 5 / 9 * cuaca - 32;
+
+        if (derajat > 300){
+            console.log ("Panas")
+        } else if (derajat < 250){
+            console.log ("Dingin")
+        } else {
+            console.log ("Normal")
+        }
+
+    </script>
+</body>
+</html>

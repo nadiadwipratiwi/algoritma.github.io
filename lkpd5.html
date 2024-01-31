@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // nomor 1
+        // for (let i = 1; i <= 50; i++) {
+        //     console.log(i);
+        // }
+
+        // // nomor 2
+        // let a = 1;
+        // while (a <= 50){
+        //     if (a % 2 != 0){
+        //         console.log(`${a} adalah bilangan ganjil`)
+        //     }a++;
+        // }
+
+        // // nomor 3
+        // let a = 1;
+        // while (a <= 50){
+        //     if (a % 2 == 0){
+        //         console.log(`${a} adalah bilangan genap`)
+        //     }a++;
+        // }
+
+        // // nomor 4
+        // let a = 1;
+        // while (a <= 50){
+        //     if (a % 2 != 0){
+        //         console.log(`${a} adalah bilangan ganjil`)
+        //     } else {
+        //         console.log(`${a} adalah bilangan genap`)
+        //     }a++;
+        // }
+
+        // nomor 5
+        let total = 0;
+        let bilanganTerbesar = -Infinity;
+        let bilanganTerkecil = Infinity;
+        let i = 1;
+
+        while (i <= 20) {
+            let bilangan = parseInt(prompt("Masukkan bilangan ke- ", ));
+
+            if (isNaN(bilangan)) {
+                console.log("Input bukan angka. Coba lagi.");
+            } else {
+                total += bilangan;
+
+                if (bilangan > bilanganTerbesar) {
+                    bilanganTerbesar = bilangan;
+                }
+                if (bilangan < bilanganTerkecil) {
+                    bilanganTerkecil = bilangan;
+                } 
+                i++;
+            }
+        }
+
+        let ratarata = total / 20;
+
+        console.log("Bilangan Terbesar: ", bilanganTerbesar);
+        console.log("Bilangan Terkecil: ", bilanganTerkecil);
+        console.log("Rata-rata: ", ratarata);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let vip = 50;
+        let eksekutif = 50;
+        let ekonomi = 50;
+        let hasil
+
+        if (vip >= 35){
+            untung1 = 25 ;
+        }
+        else if (vip >= 20 && vip < 35){
+            untung1 = 15 ;
+        }
+        else{
+            untung1 = 5 ;
+        }
+
+        if (eksekutif >= 40){
+            untung2 = 20 ;
+        }
+        else if (eksekutif >= 20 && eksekutif < 40){
+            untung2 = 10 ;
+        }
+        else{
+            untung2 = 2 ;
+        }
+
+        if (ekonomi > 0){
+            untung3 = 7 ;
+        }
+
+        let kelasvip = vip * untung1;
+        let kelaseksekutif = eksekutif * untung2;
+        let kelasekonomi = ekonomi * untung3;
+
+        let totaluntung = kelasvip + kelaseksekutif + kelasvip;
+        let totaltiket = vip + eksekutif + ekonomi;
+
+        console.log (`
+        Keuntungan kelas VIP ${kelasvip}
+        Keuntungan kelas Eksekutif ${kelaseksekutif}
+        Keuntungan kelas Ekonomi ${kelasekonomi}
+        Keuntungan keseluruhan ${totaluntung}
+        Jumlah tiket kelas VIP ${vip}
+        Jumlah tiket kelas Eksekutif ${eksekutif}
+        Jumlah tiket kelas Ekonomi ${ekonomi}
+        Total tiket seluruh kelas ${totaltiket}`)
+
+    </script>
+</body>
+</html>
